@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~*~ Vault ~*~ Welcome to my Homepage!!</title>
+<style>
+  body {
+    background-color: #0f1536;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, #dbdfe2, transparent),
+      radial-gradient(2px 2px at 80px 120px, #e4df45, transparent),
+      radial-gradient(1px 1px at 150px 60px, #47d7da, transparent),
+      radial-gradient(2px 2px at 200px 170px, #d447d3, transparent),
+      radial-gradient(1px 1px at 120px 20px, #dbdfe2, transparent);
+    background-size: 220px 200px;
+    color: #5ce459;
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 40px;
+  }
+  a { color: #e9e347; }
+  a:visited { color: #d981d8; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  .rainbow {
+    height: 8px; border: 0; margin: 18px 0;
+    background: linear-gradient(90deg, #d83030, #df9f31, #e2de3f, #3fd141, #37ced1, #3742d3, #ca3dd1, #d83030);
+  }
+  h1 {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 40px; text-align: center; margin: 14px 0 4px;
+    color: #e34edb; text-shadow: 3px 3px #2fc7ca, 6px 6px #0a0e12;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-family: Impact, "Arial Black", sans-serif;
+    color: #f2ef60; background: #a42222; border: 3px outset #cf6969;
+    padding: 6px 12px; margin: 26px 0 10px; font-size: 26px;
+    text-shadow: 2px 2px #150d0d;
+  }
+  h3 {
+    font-family: Impact, "Arial Black", sans-serif;
+    color: #f2ef60; font-size: 21px; margin: 18px 0 4px; font-weight: normal;
+  }
+  .tagline { text-align: center; color: #47d7da; font-size: 20px; }
+  .blink { animation: blink 1s steps(2, start) infinite; }
+  @keyframes blink { to { visibility: hidden; } }
+  marquee {
+    background: #0a0e13; color: #e9e347; border: 2px ridge #7b7e82;
+    font-weight: bold; padding: 4px; font-size: 18px;
+  }
+  .box {
+    background: #17216c; border: 4px ridge #a5a8ab; padding: 12px 16px; margin: 12px 0;
+    color: #eef0f2;
+  }
+  .box p { margin: 8px 0; }
+  .box li { margin: 8px 0; }
+  .summary {
+    background: #17216c; border: 6px double #f2ef60; padding: 14px 18px; margin: 14px 0;
+    color: #fff; font-size: 19px;
+  }
+  .summary p { margin: 8px 0; }
+  .center { text-align: center; }
+  .counter {
+    display: inline-block; background: #0a0e13; color: #47df47; border: 3px inset #7b7e82;
+    font-family: "Courier New", monospace; letter-spacing: 4px; padding: 4px 10px; font-size: 20px;
+  }
+  .construction {
+    text-align: center; margin: 14px auto; padding: 8px; max-width: 520px;
+    background: repeating-linear-gradient(45deg, #d9b327 0 18px, #0d1013 18px 36px);
+  }
+  .construction span { background: #0d1013; color: #e6c134; padding: 4px 12px; font-weight: bold; }
+  .nav { text-align: center; margin: 10px 0; }
+  .nav a { margin: 0 6px; }
+  .badge {
+    display: inline-block; border: 2px outset #c0c0c0; background: #c0c0c0; color: #000;
+    font-size: 12px; padding: 3px 8px; margin: 3px; font-family: Arial, sans-serif;
+  }
+  .spin { display: inline-block; animation: spin 3s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* mode switch: fun is the page itself, pro is a clean button sitting on top of it */
+  .modebar {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px;
+    padding: 10px 12px; background: #0a0e13; border-bottom: 3px ridge #7b7e82;
+  }
+  .modelabel { color: #47d7da; font-weight: bold; font-size: 14px; }
+  .fun-btn {
+    font-family: "Comic Sans MS", "Comic Sans", cursive; font-weight: bold; font-size: 17px;
+    color: #f2ef60; background: #e34edb; border: 4px outset #f19cef; padding: 6px 18px; cursor: pointer;
+    text-shadow: 2px 2px #6b1a67;
+  }
+  .fun-btn:active { border-style: inset; }
+  .toprow { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
+  .toprow marquee { flex: 1; min-width: 0; }
+  .pro-btn {
+    flex: none; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, Helvetica, Arial, sans-serif;
+    font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: #fff; background: #0071e3;
+    border-radius: 980px; padding: 9px 20px; text-decoration: none; display: inline-block;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.18); transition: background .2s;
+  }
+  .pro-btn:visited { color: #fff; }
+  .pro-btn:hover { background: #0077ed; }
+  .pro-btn:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+  #modemsg { color: #e9e347; font-size: 14px; min-height: 20px; flex-basis: 100%; text-align: center; margin: 0; }
+
+  /* hero demo */
+  .win { background: #c0c0c0; border: 4px outset #ffffff; margin: 14px 0; color: #000; font-family: Arial, sans-serif; }
+  .win-bar { background: linear-gradient(90deg, #000080, #1084d0); color: #fff; font-weight: bold; padding: 3px 8px; font-size: 14px; display: flex; justify-content: space-between; }
+  .prompt { display: flex; gap: 8px; padding: 10px; align-items: stretch; }
+  .prompt .q { flex: 1; background: #fff; border: 3px inset #808080; padding: 8px 10px; font-size: 16px; min-height: 44px; }
+  .runwrap { position: relative; }
+  .run { font-family: Impact, "Arial Black", sans-serif; font-size: 20px; background: #c0c0c0; border: 4px outset #fff; padding: 0 22px; cursor: pointer; height: 100%; }
+  .run:active { border-style: inset; }
+  .pressme { position: absolute; right: 4px; top: -34px; color: #e34edb; background: #0a0e13; border: 2px solid #e34edb; padding: 1px 8px; font-weight: bold; font-size: 15px; white-space: nowrap; transform: rotate(-4deg); }
+  .pressme::after { content: " \2193"; }
+  .pressme.gone { display: none; }
+  .geo-route-btn {
+    font-family: "Courier New", monospace; font-size: 13px; font-weight: bold;
+    padding: 6px 14px; border: 3px outset #fff; background: #c0c0c0; color: #000;
+    cursor: pointer;
+  }
+  .geo-route-btn:hover { background: #e9e347; }
+  .geo-route-btn.pick { background: #e9e347; border-style: inset; }
+  .geo-route-btn:focus-visible { outline: 3px solid #e34edb; }
+  .out { background: #0a0e13; color: #5ce459; font-family: "Courier New", monospace; font-size: 15px; padding: 10px 12px; min-height: 230px; border-top: 3px groove #808080; }
+  .out .st { color: #47d7da; margin: 2px 0; }
+  .out h4 { margin: 10px 0 4px; font-family: Impact, "Arial Black", sans-serif; font-size: 22px; color: #f2ef60; font-weight: normal; letter-spacing: 1px; }
+  .out p { margin: 4px 0 8px; color: #dfe6ea; }
+  .out .src { margin: 6px 0; padding: 4px 8px; border: 1px dashed #5c6e8a; color: #cfe8ff; font-size: 14px; }
+  .out .src b { color: #e34edb; margin-right: 8px; }
+  .out .price { font-family: Impact, "Arial Black", sans-serif; font-size: 34px; color: #e9e347; }
+  .out .btns { margin: 6px 0; display: flex; gap: 8px; flex-wrap: wrap; position: relative; }
+  .out .btns button { font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; background: #c0c0c0; border: 3px outset #fff; padding: 3px 14px; cursor: pointer; }
+  .stamp { position: absolute; left: 190px; top: -14px; color: #ff3b3b; border: 4px solid #ff3b3b; padding: 0 10px; font-family: Impact, "Arial Black", sans-serif; font-size: 30px; transform: rotate(-9deg); letter-spacing: 2px; background: rgba(10,14,19,.75); }
+  .status { color: #5ce459; min-height: 20px; }
+  .hint { text-align: center; color: #47d7da; font-size: 15px; margin: 6px 0 0; }
+
+  /* sections */
+  .label { color: #e34edb; font-weight: bold; margin: 18px 0 0; font-size: 14px; letter-spacing: 1px; }
+  .gary { font-size: 21px; color: #fff; }
+  .gary b { background: #e9e347; color: #0f151d; padding: 0 4px; }
+  .tickets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 16px 0; }
+  .ticket { background: #fffbe0; color: #1a1a1a; border: 4px ridge #d9b327; padding: 10px 12px; }
+  .ticket .no { font-family: "Courier New", monospace; font-size: 12px; color: #6a5a1a; }
+  .ticket h3 { color: #a42222; margin: 4px 0 4px; font-size: 20px; }
+  .ticket p { margin: 0; font-size: 15px; }
+  .score { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 20px 0 14px; }
+  .score-file {
+    position: relative; background: #0a0e13; border: 3px ridge #a5a8ab;
+    padding: 22px 12px 14px; text-align: left; color: #47d7da;
+    box-shadow: 3px 3px 0 #000;
+  }
+  .score-file .tab {
+    position: absolute; top: -16px; left: 8px; height: 16px; line-height: 14px;
+    padding: 0 8px; font-family: "Courier New", monospace; font-size: 11px; font-weight: bold;
+    border: 2px outset #c0c0c0; border-bottom: 0; background: #c0c0c0; color: #000;
+  }
+  .score-file:nth-child(1) .tab { background: #47d7da; color: #000; }
+  .score-file:nth-child(2) .tab { background: #e34edb; color: #fff; }
+  .score-file:nth-child(3) .tab { background: #e9e347; color: #000; }
+  .score-file:nth-child(4) .tab { background: #ff3b3b; color: #fff; }
+  .score-file h3 { font-family: Impact, "Arial Black", sans-serif; font-size: 19px; color: #f2ef60; margin: 0 0 6px; letter-spacing: 0.5px; }
+  .score-file p { margin: 0; font-size: 14px; line-height: 1.4; color: #dfe6ea; }
+  .bumps { list-style: none; padding: 0; margin: 12px 0; }
+  .bumps li { background: #17216c; border: 3px ridge #a5a8ab; border-left: 8px solid #e34edb; padding: 8px 12px; margin: 10px 0; color: #eef0f2; }
+  .bumps b { color: #f2ef60; display: block; font-size: 18px; }
+  .never { list-style: none; padding: 0; margin: 10px 0; }
+  .never li { padding: 6px 0; color: #fff; border-bottom: 1px dashed #5c6e8a; }
+  .never li::before { content: "\2716  "; color: #ff3b3b; }
+
+  .gst { background: #153718; border: 4px groove #2fab34; margin: 12px 0; color: #ceeece; }
+  .gst summary { cursor: pointer; padding: 10px 14px; list-style: none; display: grid; grid-template-columns: 38px 1fr 24px; gap: 10px; align-items: center; }
+  .gst summary::-webkit-details-marker { display: none; }
+  .gst summary::after { content: "+"; font-family: Impact, "Arial Black", sans-serif; font-size: 26px; color: #e9e347; text-align: center; }
+  .gst[open] summary::after { content: "\2212"; }
+  .gst .num { width: 34px; height: 34px; border-radius: 50%; background: #e9e347; color: #0f151d; display: grid; place-items: center; font-family: Impact, "Arial Black", sans-serif; font-size: 18px; border: 2px outset #f1eddb; }
+  .gst .t { font-family: Impact, "Arial Black", sans-serif; font-size: 21px; color: #f2ef60; display: block; }
+  .gst .l { display: block; font-size: 15px; }
+  .gst .gate { display: inline-block; margin-top: 4px; background: #a42222; color: #fff; border: 2px outset #cf6969; padding: 0 8px; font-size: 13px; font-weight: bold; }
+  .gst .body { padding: 2px 16px 12px 62px; }
+  .gst .body p { margin: 8px 0; }
+  .gst .body b { color: #ece780; }
+  @media (max-width: 700px) {
+    .tickets, .score { grid-template-columns: 1fr; }
+    .gst .body { padding-left: 16px; }
+    .prompt { flex-direction: column; }
+    .stamp { left: auto; right: 0; }
+  }
+  @media (max-width: 560px) { h1 { font-size: 28px; } h2 { font-size: 20px; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<div class="toprow"><marquee scrollamount="6">*** WELCOME TO MY HOMEPAGE *** EVERY JOB WE'VE EVER RUN, ONE QUESTION AWAY *** MEET VAULT *** SIGN MY GUESTBOOK *** </marquee><a class="pro-btn" href="proposal-pitch-v3.html">Pro mode</a></div>
+
+<h1>~*~ Every job we've ever run, one question away. ~*~</h1>
+<p class="tagline"><span class="spin">&#9733;</span> <span class="blink">NEW!</span> A pitch for the AI Champions Club <span class="spin">&#9733;</span></p>
+
+<div class="construction"><span>&#9888; THIS PAGE IS ALWAYS UNDER CONSTRUCTION &#9888;</span></div>
+
+<p class="center">You are visitor number<br><span class="counter">0 0 4 2 1 7</span></p>
+
+<div class="nav">
+  [ <a href="#demo">Try Vault</a> ]
+  [ <a href="#gary">The Gary Problem</a> ]
+  [ <a href="#ask">The Ask</a> ]
+  [ <a href="#bumps">Risks</a> ]
+  [ <a href="#plan">The Plan</a> ]
+</div>
+
+<hr class="rainbow">
+
+<div class="summary center" id="demo">
+  Vault searches our past jobs, drafts the next step, and shows where every number came from. Nothing moves until a person approves.
+</div>
+
+<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:14px 0 16px;">
+  <button type="button" class="geo-route-btn pick" data-route="quote">01 · Price a quote</button>
+  <button type="button" class="geo-route-btn" data-route="csr">02 · Check reorder specs</button>
+  <button type="button" class="geo-route-btn" data-route="stock">03 · Find substitute stock</button>
+</div>
+
+<div class="win" aria-label="Vault example">
+  <div class="win-bar"><span>VAULT.EXE</span><span class="r">route 01 · price a quote</span></div>
+  <div class="prompt">
+    <div class="q" id="q"></div>
+    <div class="runwrap">
+      <span class="pressme" id="pressme">press here!</span>
+      <button class="run" id="run" type="button">Run</button>
+    </div>
+  </div>
+  <div class="out" id="out" aria-live="polite"><div class="st">&gt; Waiting. The answer shows up here, with its sources.</div></div>
+</div>
+<p class="hint">Stop digging through old folders. Ask Vault, and get the answers with the evidence behind them.</p>
+
+<hr class="rainbow">
+
+<h2 id="gary">&#9733; Every shop has a Gary.</h2>
+<div class="box">
+  <p class="label">THE GARY PROBLEM</p>
+  <p class="gary" id="gary-quote">A tough request comes in. Nobody searches the folder; they ask Gary. Gary glances up: <b>"We ran that exact spec for Hendricks in August—five thousand on 100-pound gloss. Call it eighteen-fifty."</b> And he's right.</p>
+  <p>Gary finally gets to take a vacation. <b>Vault is Gary’s memory, with the proof attached.</b> The desk still makes the call.</p>
+</div>
+<div class="tickets">
+  <div class="ticket"><div class="no">STEP 01</div><h3>Finds similar jobs</h3><p>Searches past quotes and specs by size, stock, press, and quantity, and by meaning, not just exact words.</p></div>
+  <div class="ticket"><div class="no">STEP 02</div><h3>Shows the jobs it used</h3><p>Every number links to the jobs behind it, so you can see where the price came from.</p></div>
+  <div class="ticket"><div class="no">STEP 03</div><h3>Waits for a person</h3><p>Drafts the quote, but leaves sending it to the person on the desk. Nothing goes out alone.</p></div>
+</div>
+
+<h2 id="ask">&#9733; Start with discovery. Measure before we build.</h2>
+<div class="box">
+  <p class="label">THE ASK</p>
+  <p>Before writing code, we measure. We shadow real requests to find the bottleneck, clock the lost hours, and prove the ROI. You decide if we build.</p>
+</div>
+<div class="score">
+  <div class="score-file">
+    <span class="tab">01 &middot; Map</span>
+    <h3>Process Map</h3>
+    <p>Finds where requests stall between intake, desk, and press.</p>
+  </div>
+  <div class="score-file">
+    <span class="tab">02 &middot; Cost</span>
+    <h3>Cost Baseline</h3>
+    <p>Times manual searches to calculate true monthly payroll burn.</p>
+  </div>
+  <div class="score-file">
+    <span class="tab">03 &middot; Data</span>
+    <h3>Archive Audit</h3>
+    <p>Checks if past job tickets are clean enough to automate.</p>
+  </div>
+  <div class="score-file">
+    <span class="tab">04 &middot; Call</span>
+    <h3>Decision Pack</h3>
+    <p>A 1-page ROI target, build cost, and honest roadmap.</p>
+  </div>
+</div>
+
+<hr class="rainbow">
+
+<h2 id="bumps">&#9733; We know where the bumps are.</h2>
+<p class="label">WHAT COULD GO SIDEWAYS</p>
+<ul class="bumps">
+  <li><b>Messy old specs</b>2021 records describe stock differently than 2025 records. Discovery measures cleanup cost upfront.</li>
+  <li><b>Yesterday's prices</b>Stock costs shift. Old matches flag as historical reference, never current pricing.</li>
+  <li><b>The customer factor</b>Contracts and relationships alter final rates. Vault provides the baseline; the desk sets the price.</li>
+  <li><b>Zero matches</b>When history comes up blank, Vault admits it and routes the request to a human.</li>
+</ul>
+
+<h3>What Vault will never do.</h3>
+<ul class="never">
+  <li>Send anything to a customer autonomously.</li>
+  <li>Alter system records or pricing tables.</li>
+  <li>Overrule the person on the desk.</li>
+</ul>
+<p>Every edge-case failure logs expected vs. actual behavior, root cause, and fix.</p>
+
+<hr class="rainbow">
+
+<h2 id="plan">&#9733; Nine stages. Proof after every one.</h2>
+<p class="label">THE PLAN</p>
+<p>Discovery comes first because it picks our starting route—whether that's quoting, purchasing, scheduling, or another bottleneck entirely. We used quoting as our example.</p>
+<p>Open any stage to see what the product looks like there. <a href="proposal-tech.html">Want the engineering details? Read the tech spec.</a></p>
+
+<div id="stages">
+  <details class="gst"><summary><span class="num">0</span><span><span class="t">Discovery</span><span class="l">Follow real requests start to finish. Measure today. Set the target.</span><span class="gate">YOUR CALL: BUILD?</span></span></summary>
+    <div class="body">
+      <div style="background:#fff;color:#000;border:2px inset #808080;padding:10px;font-family:'Courier New',monospace;margin:8px 0;">
+        <div style="background:#000080;color:#fff;padding:2px 6px;font-weight:bold;font-size:12px;margin:-10px -10px 8px;">DISCOVERY_PACK.TXT</div>
+        <p style="margin:4px 0;"><b>Problem:</b> <span id="stage0-sync-prob">A quote takes about 45 minutes because staff search old jobs by hand, and 1 in 4 gets reworked.</span></p>
+        <hr style="border:0;border-top:1px dashed #808080;margin:6px 0;">
+        <table style="width:100%;font-size:13px;border-collapse:collapse;color:#000;">
+          <tr><th style="text-align:left;padding:2px 4px;">Measure</th><th style="text-align:left;padding:2px 4px;">Today</th><th style="text-align:left;padding:2px 4px;">Target</th></tr>
+          <tr><td style="padding:2px 4px;">Time per <span class="route-noun">quote</span></td><td id="stage0-time-today" style="padding:2px 4px;">45 min</td><td id="stage0-time-target" style="padding:2px 4px;"><b>15 min</b></td></tr>
+          <tr><td style="padding:2px 4px;">Cost per <span class="route-noun">quote</span></td><td id="stage0-cost-today" style="padding:2px 4px;">$38</td><td id="stage0-cost-target" style="padding:2px 4px;"><b>$12</b></td></tr>
+          <tr><td style="padding:2px 4px;">Rework per <span class="route-noun">quote</span></td><td id="stage0-rework-today" style="padding:2px 4px;">1 in 4</td><td id="stage0-rework-target" style="padding:2px 4px;"><b>1 in 10</b></td></tr>
+        </table>
+        <hr style="border:0;border-top:1px dashed #808080;margin:6px 0;">
+        <p style="margin:4px 0;"><b>Start with:</b> <span id="stage0-sync-chip" style="background:#ffff00;color:#000;padding:0 4px;font-weight:bold;">repeat-order quotes</span></p>
+      </div>
+      <p><b>You'd see:</b> A short written pack, not software. It holds a one-sentence problem, a map of how a quote moves today, a baseline measured from a sample of actual requests, a success target, and a recommendation on which task to start with.</p>
+    </div></details>
+  <details class="gst"><summary><span class="num">1</span><span><span class="t">Working assistant</span><span class="l">A basic assistant the team can try on real questions, with a log of every request.</span></span></summary>
+    <div class="body"><p><b>You'd see.</b> A chat box that answers general print questions. Answers appear as they are written, and an admin can open a log of every request and what came back.</p></div></details>
+  <details class="gst"><summary><span class="num">2</span><span><span class="t">Answers from our records</span><span class="l">Answers from our own jobs, with sources, and a score for how often they're right.</span></span></summary>
+    <div class="body"><p><b>You'd see.</b> Answers built from our records, each with numbered sources you can open. When the records don't hold the answer, it says so. A scorecard rates its answers against questions we already know the answers to, and lists which kinds of question it handles reliably.</p></div></details>
+  <details class="gst"><summary><span class="num">3</span><span><span class="t">Actions with approval</span><span class="l">Drafts real work, like a quote or an email, and holds it until a person approves.</span></span></summary>
+    <div class="body"><p><b>You'd see.</b> A draft quote or email showing the jobs it used. A person can edit it, approve it, or reject it.</p></div></details>
+  <details class="gst"><summary><span class="num">4</span><span><span class="t">Memory</span><span class="l">Tracks every job: drafted, approved, pending. Work picks up where it left off.</span></span></summary>
+    <div class="body"><p><b>You'd see.</b> A list of every request the assistant handled and where each one stands. After a restart or a crash, the list is still there.</p></div></details>
+  <details class="gst"><summary><span class="num">5</span><span><span class="t">Reliable multi-step work</span><span class="l">The full task from request to approved result, pausing for a person wherever a decision is needed.</span></span></summary>
+    <div class="body"><p><b>You'd see.</b> Each job shows its current step. It can wait days for an approval and then carry on from there. A step that fails is retried or flagged for a person.</p></div></details>
+  <details class="gst"><summary><span class="num">6</span><span><span class="t">Testing and measuring</span><span class="l">A scorecard of accuracy, speed, and cost per task, compared with where we started.</span><span class="gate">YOUR CALL: ROLL OUT?</span></span></summary>
+    <div class="body"><p><b>You'd see.</b> A scorecard of test scenarios, with accuracy, speed, and cost per task next to the Discovery baseline. A failed case opens a step-by-step record of what happened. It starts with about 20 questions and grows as real cases turn up.</p></div></details>
+  <details class="gst"><summary><span class="num">7</span><span><span class="t">Rollout</span><span class="l">The assistant in daily use, with secure access, monitoring, and a written recovery plan.</span></span></summary>
+    <div class="body">
+      <div style="float:right;margin:0 0 12px 14px;background:#fff;border:3px outset #c0c0c0;padding:8px 8px 12px;text-align:center;box-shadow:4px 4px 0 #000;transform:rotate(2deg);max-width:160px;">
+        <svg viewBox="0 0 132 105" width="132" height="105" xmlns="http://www.w3.org/2000/svg" style="display:block;border:1px solid #000;">
+          <rect width="132" height="105" fill="#a5f3fc"/>
+          <circle cx="112" cy="20" r="12" fill="#ffd21f" stroke="#15120e" stroke-width="1.2"/>
+          <path d="M0 44 Q 33 41 66 44 T 132 44 L 132 65 L 0 65 Z" fill="#0284c7"/>
+          <path d="M12 50 Q 25 47 38 50 M72 52 Q 85 49 98 52" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M0 62 Q 55 58 132 64 L 132 105 L 0 105 Z" fill="#fde68a" stroke="#15120e" stroke-width="1.2"/>
+          <line x1="4" y1="88" x2="86" y2="78" stroke="#78350f" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="4" y1="85" x2="84" y2="75" stroke="#00a3d9" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M6 85 L24 82" stroke="#e5007d" stroke-width="13" stroke-linecap="round"/>
+          <path d="M22 83 C 40 81, 56 79, 72 78" stroke="#15120e" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <path d="M22 83 C 40 81, 56 79, 72 78" stroke="#fed7aa" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <circle cx="73" cy="78" r="3" fill="#fed7aa" stroke="#15120e" stroke-width="1"/>
+          <path d="M24 85 C 42 79, 56 73, 70 68" stroke="#15120e" stroke-width="7" stroke-linecap="round" fill="none"/>
+          <path d="M24 85 C 42 79, 56 73, 70 68" stroke="#fed7aa" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <circle cx="71" cy="68" r="3" fill="#fed7aa" stroke="#15120e" stroke-width="1"/>
+          <circle cx="68" cy="28" r="14" fill="#fed7aa" stroke="#15120e" stroke-width="1.2"/>
+          <path d="M67 29 Q 74 30 71 34" stroke="#15120e" stroke-width="1.5" fill="none"/>
+          <path d="M64 36 Q 68 39 72 36" stroke="#15120e" stroke-width="1.2" fill="none"/>
+          <rect x="67" y="25" width="13" height="7" rx="2" fill="#15120e"/>
+          <line x1="65" y1="28" x2="67" y2="28" stroke="#15120e" stroke-width="1.5"/>
+          <ellipse cx="69" cy="20" rx="17" ry="4.5" fill="#fde047" stroke="#15120e" stroke-width="1.2"/>
+          <path d="M57 20 L60 12 L77 12 L80 20 Z" fill="#fde047" stroke="#15120e" stroke-width="1.2"/>
+          <rect x="59" y="16" width="19" height="3" fill="#e11d48"/>
+          <path d="M50 40 C 44 48 40 58 37 72 L 74 65 C 72 54 68 46 62 39 Z" fill="#38bdf8" stroke="#15120e" stroke-width="1.2"/>
+          <circle cx="48" cy="48" r="2.5" fill="#fff"/>
+          <circle cx="58" cy="46" r="2" fill="#fff"/>
+          <circle cx="52" cy="60" r="2.2" fill="#fff"/>
+          <path d="M60 46 C 72 50 82 56 90 62 L 87 66 C 79 61 70 55 58 52 Z" fill="#fed7aa" stroke="#15120e" stroke-width="1"/>
+          <path d="M88 56 L96 56 L94 67 L86 67 Z" fill="#f43f5e" stroke="#15120e" stroke-width="1"/>
+          <line x1="93" y1="52" x2="91" y2="60" stroke="#fef08a" stroke-width="2" stroke-linecap="round"/>
+          <path d="M96 54 Q 102 50 100 58 Q 98 55 96 54" fill="#22c55e" stroke="#15120e" stroke-width="0.8"/>
+        </svg>
+        <span style="font-family:'Comic Sans MS',cursive;font-size:12px;color:#000;display:block;margin-top:4px;font-weight:bold;">&mdash;Gary</span>
+      </div>
+      <p><b>You'd see:</b> The assistant behind a login, starting with a small group. An admin page shows usage, failures, and cost, and an alert goes out when something breaks. Recovery steps are written down, and access follows the permissions we already have.</p>
+    </div></details>
+  <details class="gst"><summary><span class="num">8</span><span><span class="t">Results</span><span class="l">Before-and-after against the target, with a recommendation.</span><span class="gate">YOUR CALL: WHAT'S NEXT?</span></span></summary>
+    <div class="body"><p><b>You'd see.</b> A one-page report that compares before and after against the Discovery target. It adds feedback from the people who used it, the cost, and the risks, and ends with a recommendation. The code, tests, and records of failed runs go in an appendix.</p></div></details>
+</div>
+
+<hr class="rainbow">
+
+<h2>&#9733; Let's find out if it's real.</h2>
+<p class="center" style="font-size:20px;color:#fff;">Gary deserves a vacation. Let's measure what the search costs.</p>
+
+<hr class="rainbow">
+
+<div class="center">
+  <p><span class="blink">&#9993;</span> <b>Sign my <a href="#">Guestbook</a>!</b> <span class="blink">&#9993;</span></p>
+  <p>
+    <span class="badge">Best viewed in Netscape Navigator 4.0</span>
+    <span class="badge">800x600</span>
+    <span class="badge">Made with Notepad</span>
+    <span class="badge">Powered by Hotdog Pro</span>
+  </p>
+  <p>[ <a href="#">&lt;&lt; Prev</a> | <a href="#">Random Site</a> | <a href="#">Next &gt;&gt;</a> ] &mdash; The Business Webring</p>
+  <p style="color:#888;font-size:13px;">&copy; 1997 &bull; A pitch for the AI Champions Club &bull; Hosted at /SiliconValley/Lab/4217</p>
+</div>
+
+</div>
+
+<script>
+  var DATA = {
+    quote: {
+      header: "route 01 · price a quote",
+      targetChip: "repeat-order quotes",
+      ask: "Quote 5,000 tri-fold brochures, 100 lb gloss, full color both sides.",
+      steps: ["Searching past tri-fold quotes", "Narrowing to 100 lb gloss, 4/4", "Found 3 similar jobs. Working out the price."],
+      title: "Draft quote",
+      draftLabel: "Draft price. Not sent.",
+      rows: [
+        ["J-2291", "Mar 2023. 5,000 tri-fold, 100 lb gloss, 4/4. Charged $1,840."],
+        ["J-2417", "Aug 2024. 5,000 tri-fold, 100 lb gloss, 4/4. Charged $1,925."],
+        ["J-2503", "Feb 2025. 4,000 tri-fold, 100 lb gloss, 4/4. Charged $1,610. Smaller run, used for scale only."]
+      ],
+      price: "$1,880"
+    },
+    csr: {
+      header: "route 02 · check reorder specs",
+      targetChip: "reorder spec lookup",
+      ask: "Customer emails: 'Send 5,000 more of the spring menus, same as last time.'",
+      steps: ["Searching order history for spring menu", "Found J-2188 (Apr 2022) & J-2490 (Oct 2023)", "Detected spec change: matte laminate added in Oct 2023", "Drafting reorder ticket with spec alert."],
+      title: "Reorder ticket (5,000 menus)",
+      draftLabel: "Draft reorder ticket. Not sent.",
+      rows: [
+        ["J-2188", "Apr 2022. 80 lb uncoated cover. Client flagged aqueous scuffing."],
+        ["J-2490", "Oct 2023. Switched to 80 lb silk + matte laminate. Approved standard."],
+        ["Alert", "Client spec updated to matte laminate in 2023. Do not run 2022 uncoated spec."]
+      ],
+      price: "$1,420"
+    },
+    stock: {
+      header: "route 03 · find substitute stock",
+      targetChip: "vendor & stock sourcing",
+      ask: "80 lb gloss is backordered—what substitute stock did we run on the Hendricks job and who supplied it?",
+      steps: ["Searching substrate substitution records", "Found Hendricks job J-1904 & supplier invoices", "Pulling vendor lead times and spoil rates."],
+      title: "Substitute: McCoy Silk 80# Cover",
+      draftLabel: "Substitute stock found. Not ordered.",
+      rows: [
+        ["J-1904", "Midland Paper supplied McCoy Silk 80# Cover as substitute. Spoilage 2.1%."],
+        ["Midland", "In stock. 24-hr local delivery ($112/cwt)."],
+        ["Lindenmeyr", "Similar grade (Chorus Art Silk 80#). 3-day warehouse transfer."]
+      ],
+      price: "$112 / cwt"
+    }
+  };
+
+  var ROUTE_SYNC = {
+    quote: {
+      header: "route 01 · price a quote",
+      gary: 'A tough request comes in. Nobody searches the folder; they ask Gary. Gary glances up: <b>"We ran that exact spec for Hendricks in August—five thousand on 100-pound gloss. Call it eighteen-fifty."</b> And he\'s right.',
+      noun: "quote",
+      chip: "repeat-order quotes",
+      prob: "A quote takes about 45 minutes because staff search old jobs by hand, and 1 in 4 gets reworked.",
+      timeToday: "45 min",
+      timeTarget: "15 min",
+      costToday: "$38",
+      costTarget: "$12",
+      reworkToday: "1 in 4",
+      reworkTarget: "1 in 10"
+    },
+    csr: {
+      header: "route 02 · check reorder specs",
+      gary: 'A vague reorder email lands. Nobody searches the ticket archive. They ask Gary. Gary squints at the ceiling and says <b>"Careful, they hated the aqueous coat in \'22—use the \'23 spec sheet."</b> And he\'s right.',
+      noun: "reorder",
+      chip: "reorder spec lookup",
+      prob: "An account rep spends 35 minutes searching past tickets, email chains, and coating complaints for repeat orders.",
+      timeToday: "35 min",
+      timeTarget: "10 min",
+      costToday: "$29",
+      costTarget: "$8",
+      reworkToday: "1 in 5",
+      reworkTarget: "1 in 15"
+    },
+    stock: {
+      header: "route 03 · find substitute stock",
+      gary: 'A mill is out of stock. Nobody calls three paper merchants. They ask Gary. Gary squints at the ceiling and says <b>"We subbed McCoy Silk from Midland on Job 1904 and the client loved it."</b> And he\'s right.',
+      noun: "stock search",
+      chip: "vendor & stock sourcing",
+      prob: "When stock is backordered, estimators and buyers spend 50 minutes calling merchants and checking old spoilage sheets.",
+      timeToday: "50 min",
+      timeTarget: "12 min",
+      costToday: "$42",
+      costTarget: "$10",
+      reworkToday: "1 in 6",
+      reworkTarget: "1 in 20"
+    }
+  };
+
+  var current = "quote";
+  var timers = [];
+  var qEl = document.getElementById("q");
+  var outEl = document.getElementById("out");
+  var press = document.getElementById("pressme");
+  var routeBtns = document.querySelectorAll(".geo-route-btn");
+  var garyEl = document.getElementById("gary-quote");
+  var nounEls = document.querySelectorAll(".route-noun");
+  var stage0ChipEl = document.getElementById("stage0-sync-chip");
+  var stage0ProbEl = document.getElementById("stage0-sync-prob");
+  var stage0TimeToday = document.getElementById("stage0-time-today");
+  var stage0TimeTarget = document.getElementById("stage0-time-target");
+  var stage0CostToday = document.getElementById("stage0-cost-today");
+  var stage0CostTarget = document.getElementById("stage0-cost-target");
+  var stage0ReworkToday = document.getElementById("stage0-rework-today");
+  var stage0ReworkTarget = document.getElementById("stage0-rework-target");
+  var winHeaderEl = document.querySelector(".win-bar .r");
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+  function clearTimers() { timers.forEach(clearTimeout); timers = []; }
+
+  function renderResult(d) {
+    var wrap = el("div");
+    wrap.appendChild(el("h4", "", d.title));
+    if (d.body) wrap.appendChild(el("p", "", d.body));
+    d.rows.forEach(function (r) {
+      var row = el("div", "src");
+      row.appendChild(el("b", "", r[0]));
+      row.appendChild(document.createTextNode(r[1]));
+      wrap.appendChild(row);
+    });
+    if (d.price) {
+      wrap.appendChild(el("div", "", d.draftLabel || "Draft ready. Not sent."));
+      wrap.appendChild(el("div", "price", d.price));
+      var btns = el("div", "btns");
+      var yes = el("button", "", "Approve");
+      yes.type = "button";
+      var adj = el("button", "", "Adjust");
+      adj.type = "button";
+      var st = el("div", "status");
+      yes.addEventListener("click", function () {
+        var old = btns.querySelector(".stamp");
+        if (old) old.remove();
+        btns.appendChild(el("div", "stamp", "APPROVED"));
+        st.textContent = "Approved. Cleared to send.";
+      });
+      adj.addEventListener("click", function () {
+        var old = btns.querySelector(".stamp");
+        if (old) old.remove();
+        st.textContent = "Sent back. Nothing went out.";
+      });
+      btns.appendChild(yes);
+      btns.appendChild(adj);
+      wrap.appendChild(btns);
+      wrap.appendChild(st);
+    }
+    outEl.appendChild(wrap);
+  }
+
+  function run() {
+    clearTimers();
+    if (press) press.classList.add("gone");
+    var d = DATA[current];
+    outEl.textContent = "";
+    qEl.textContent = "";
+    var i = 0;
+    (function typeIt() {
+      qEl.textContent = d.ask.slice(0, ++i);
+      if (i < d.ask.length) { timers.push(setTimeout(typeIt, 14)); return; }
+      d.steps.forEach(function (s, n) {
+        timers.push(setTimeout(function () { outEl.appendChild(el("div", "st", "> " + s)); }, 400 * (n + 1)));
+      });
+      timers.push(setTimeout(function () { renderResult(d); }, 400 * (d.steps.length + 1)));
+    })();
+  }
+
+  function applyRouteSync(key, triggerRun) {
+    var r = ROUTE_SYNC[key];
+    if (!r) return;
+    routeBtns.forEach(function (b) {
+      if (b.getAttribute("data-route") === key) {
+        b.classList.add("pick");
+      } else {
+        b.classList.remove("pick");
+      }
+    });
+    if (winHeaderEl) winHeaderEl.textContent = r.header;
+    if (garyEl) garyEl.innerHTML = r.gary;
+    nounEls.forEach(function (n) { n.textContent = r.noun; });
+    if (stage0ChipEl) stage0ChipEl.textContent = r.chip;
+    if (stage0ProbEl) stage0ProbEl.textContent = r.prob;
+    if (stage0TimeToday && r.timeToday) stage0TimeToday.textContent = r.timeToday;
+    if (stage0TimeTarget && r.timeTarget) stage0TimeTarget.innerHTML = "<b>" + r.timeTarget + "</b>";
+    if (stage0CostToday && r.costToday) stage0CostToday.textContent = r.costToday;
+    if (stage0CostTarget && r.costTarget) stage0CostTarget.innerHTML = "<b>" + r.costTarget + "</b>";
+    if (stage0ReworkToday && r.reworkToday) stage0ReworkToday.textContent = r.reworkToday;
+    if (stage0ReworkTarget && r.reworkTarget) stage0ReworkTarget.innerHTML = "<b>" + r.reworkTarget + "</b>";
+
+    current = key;
+    if (triggerRun) run();
+    else qEl.textContent = DATA[current].ask;
+  }
+
+  document.getElementById("run").addEventListener("click", run);
+  routeBtns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      applyRouteSync(b.getAttribute("data-route"), true);
+    });
+  });
+
+  applyRouteSync("quote", false);
+
+  // stages: opening one closes the others
+  var stageEls = document.querySelectorAll("#stages details");
+  stageEls.forEach(function (d) {
+    d.addEventListener("toggle", function () {
+      if (d.open) stageEls.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+
+</script>
+</body>
+</html>

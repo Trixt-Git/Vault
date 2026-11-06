@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference: Stage 0 Discovery Cheat Sheet</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  @media print {
+    body { padding: 0; background: #fff; }
+    .nav-links, footer { display: none; }
+    .card { border: 1px solid #ccc; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="eyebrow">Quick Reference / Pitch Cheat Sheet</div>
+    <h1>Stage 0: Discovery</h1>
+    <div class="subtitle">How to investigate from absolute zero: following the work, finding the leak, setting the baseline.</div>
+  </header>
+
+  <div class="card">
+    <h3>The Pitch Core (Four Dimensions)</h3>
+    <table>
+      <tr>
+        <th style="width:28%">Dimension</th>
+        <th>Pitch Talking Point</th>
+      </tr>
+      <tr>
+        <td><strong>1. What It Does</strong></td>
+        <td>Enters the building knowing nothing. Picks live customer requests and physically traces them through the shop: observing screens, finding "shadow spreadsheets", timing active touch minutes versus dead queue hours, and uncovering the actual operational bottleneck.</td>
+      </tr>
+      <tr>
+        <td><strong>2. Where Product Is</strong></td>
+        <td>Zero code. A printed 1-page Discovery Pack containing a one-sentence problem definition discovered on the floor, a visual map of the actual workflow, and an agreed baseline scorecard.</td>
+      </tr>
+      <tr>
+        <td><strong>3. Software Stack</strong></td>
+        <td>Google Sheets or Excel for observation logs; Miro, Lucidchart, or Google Drawings for workflow mapping; Google Docs or Word for the final memo.</td>
+      </tr>
+      <tr>
+        <td><strong>4. Ways to Pivot Out</strong></td>
+        <td>
+          <strong>Green Light (Build):</strong> Discovery identifies a verified, repetitive data-retrieval bottleneck with accessible past records, and leadership agrees on the target.<br>
+          <strong>Yellow Light (Remediate):</strong> The bottleneck is high-value, but past records are un-indexed paper cards or messy scans; pause software to clean the data foundation first.<br>
+          <strong>Red Light (Kill / Walk Away):</strong> The problem is an SOP issue (needs a checklist), a training gap, or easily solved with an off-the-shelf SaaS tool. Kill the custom AI build before spending a dollar on development.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>The Zero-Knowledge Observation Method</h3>
+    <table>
+      <tr>
+        <th>Step</th>
+        <th>What You Physically Do</th>
+        <th>What You Are Looking For</th>
+      </tr>
+      <tr>
+        <td><strong>1. The Order Trace</strong></td>
+        <td>Pick one live request at 8:00 AM and follow it from desk to desk.</td>
+        <td>Where does work sit untouched? Which software windows get opened?</td>
+      </tr>
+      <tr>
+        <td><strong>2. Shadow the Desk</strong></td>
+        <td>Sit beside operators, watching hands, keyboards, and monitors.</td>
+        <td>The "shadow systems": desktop spreadsheets, sticky notes, and paper binders.</td>
+      </tr>
+      <tr>
+        <td><strong>3. Listen for Friction</strong></td>
+        <td>Notice copy-pasting between disconnected tools and verbal walk-ups.</td>
+        <td>Where a human is acting as an expensive, manual database search engine.</td>
+      </tr>
+      <tr>
+        <td><strong>4. Measure the Gap</strong></td>
+        <td>Compare email/file creation timestamps against sent timestamps.</td>
+        <td>Active Touch Time (hands-on-keys) vs. Idle Queue Time (waiting in an inbox).</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="talk-track">
+    <div class="label">Executive Soundbite</div>
+    <p>"When we walk into your business on Day 1, we assume nothing. We don't bring a list of your problems because we don't work here yet. We sit next to your team, follow real orders through the building, find where time actually evaporates, and tell you honestly whether software can fix it or if you just need a better checklist."</p>
+  </div>
+
+  <footer>
+    <div class="nav-links">
+      <a href="../lessons/0001-stage-0-discovery.html">&larr; Back to Lesson 0</a>
+      <a href="../proposal-pitch-v3.html">Pitch Deck &rarr;</a>
+    </div>
+    <p>Vault Technical Architecture &mdash; Grounded Reference Sheet</p>
+  </footer>
+</div>
+</body>
+</html>
