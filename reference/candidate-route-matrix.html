@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference: Candidate Route Matrix Cheat Sheet</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  @media print {
+    body { padding: 0; background: #fff; }
+    .nav-links, footer { display: none; }
+    .card { border: 1px solid #ccc; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="eyebrow">Quick Reference / Pitch Cheat Sheet</div>
+    <h1>The Candidate Route Matrix</h1>
+    <div class="subtitle">Four operational print manufacturing choke points and how to position them in Discovery.</div>
+  </header>
+
+  <div class="card">
+    <h3>The Four Operational Routes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Candidate Route</th>
+          <th>Physical Choke Point</th>
+          <th>Key Empirical Baseline</th>
+          <th>Blast Radius &amp; Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Route A: Quote Desk &amp; Estimating</strong></td>
+          <td>Manual search across archived job jackets, static rate sheets, and tribal estimator memory.</td>
+          <td>30–60 min touch time<br>4–24 hr queue latency<br>25% rework rate</td>
+          <td><strong>Low</strong> (Estimator signs off every quote).<br><em>The Lighthouse Walkthrough.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Route B: Prepress File Triage</strong></td>
+          <td>Incoming client PDFs fail baseline production specs (bleed, font, color space), idling presses.</td>
+          <td>60–80% first-pass failure<br>15–30 min manual fix time<br>High hourly press idle cost</td>
+          <td><strong>Moderate to High</strong> (Layout scrap risk).<br><em>Selectable Alternative 1.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Route C: Proof &amp; Change Tracking</strong></td>
+          <td>Proofs sit idle in client inboxes; verbal revision requests lead to unbilled scope creep.</td>
+          <td>2.4–4.2 days queue latency<br>20–40 min revision touch<br>3–7% net margin erosion</td>
+          <td><strong>Low to Moderate</strong> (Diff verification).<br><em>Selectable Alternative 2.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Route D: Substrate Price Verification</strong></td>
+          <td>Paper is 35–50% of print COGS; volatile merchant pricing leads to stale quote pricing.</td>
+          <td>10–20 min merchant check<br>5–12% margin slippage risk<br>Monthly static PDF feeds</td>
+          <td><strong>High</strong> (Direct contract margin loss).<br><em>Selectable Alternative 3.</em></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>The Pitch Core: Engine vs. Tracks</h3>
+    <table>
+      <tr>
+        <th style="width:28%">Concept</th>
+        <th>Physical Explanation for Stakeholders</th>
+      </tr>
+      <tr>
+        <td><strong>The Engine (Vault Core)</strong></td>
+        <td>The permanent software machinery: document parsing, database vector/text search, Pydantic validation, human approval screens, and audit traces. Built once.</td>
+      </tr>
+      <tr>
+        <td><strong>The Track (Route A)</strong></td>
+        <td>The concrete demonstration through-line shown across Stages 1–8. Proves schemas, latency, and human control using Estimating so buyers inspect real wiring.</td>
+      </tr>
+      <tr>
+        <td><strong>The Switch (Stage 0)</strong></td>
+        <td>The Discovery Gate. The team measures the actual plant floor. Leadership chooses which track to build first based on real friction, not vendor guesses.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="talk-track">
+    <div class="label">Executive Soundbite</div>
+    <p>"Vault is the operational memory engine for your entire plant. In this pitch, we walk through Route A—Estimating—step-by-step so you can inspect every wire and human approval screen. But in Stage 0, we don't assume estimating is your biggest bottleneck. We measure your floor, and you decide which track we pave first."</p>
+  </div>
+
+  <footer>
+    <div class="nav-links">
+      <a href="../lessons/0002-multi-route-framing.html">&larr; Back to Lesson 2</a>
+      <a href="../proposal-pitch-v3.html">Pitch Deck &rarr;</a>
+    </div>
+    <p>Vault Technical Architecture &mdash; Grounded Reference Sheet</p>
+  </footer>
+</div>
+</body>
+</html>
